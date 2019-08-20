@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<section id="show-page">
+  <div>Airline: </div>
+  <div><%= flight.airline %></div>
+  
+  <div>Flight: </div>
+  <div><%= flight.flightNo %></div>
+
+  <div>Place of Origin</div>
+  <div><%= flight.origin %></div>
+  
+  <div>Departure: </div>
+  <div><%= flight.departs %></div>
+
+
+  <a href="/flights/<%= flight._id %>/tickets/new">Ticket</a>
+</section>
+
+<%- include('../partials/footer') %>

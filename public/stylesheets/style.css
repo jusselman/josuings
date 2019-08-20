@@ -1,0 +1,33 @@
+body {
+  background: url('https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+  font-family: 'Lexend Tera', sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+}
+
+.flights-header {
+  text-decoration: underline;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.flight-add {
+  position: absolute;
+  right: 0;
+}
+
+nav img {
+  height: 2.5rem;
+}
+
+nav {
+  display: flex;
+}

@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+
+<% if (flights.length > 0) { %>
+<table id="list">
+  <thead>
+    <tr>
+      <th class="flights-header">Airline</th>
+      <th class="flights-header">Origin</th>
+      <th class="flights-header">Flight#</th>
+      <th class="flights-header">Departure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% flights.forEach(function(f) { %>
+      <tr>
+        <td><%= f.airline %></td>
+        <td><%= f.origin %></td>
+        <td><%= f.flightNo %></td>
+        <td><%= f.departs %></td>
+        <td><a href="/flights/<%= f.id %>">Details</a></td>
+        <td><button">X</button></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+<% } else { %>
+  <h1>No Flights!</h1>
+<% } %>
+
+<%- include('../partials/footer') %>
